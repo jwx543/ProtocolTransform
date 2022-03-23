@@ -1,4 +1,4 @@
-package com.nju.jwx.http;
+package com.nju.protocol.http;
 
 // 协议请求定义
 public class HttpRequest {

@@ -1,4 +1,4 @@
-package com.nju.jwx.http;
+package com.nju.protocol.http;
 
 // 字节转化工具类
 public final class ByteUtils {

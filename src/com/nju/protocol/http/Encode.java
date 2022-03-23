@@ -1,4 +1,4 @@
-package com.nju.jwx.http;
+package com.nju.protocol.http;
 
 public final class Encode {
     // UTF-8编码

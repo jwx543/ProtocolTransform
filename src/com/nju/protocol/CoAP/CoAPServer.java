@@ -1,4 +1,4 @@
-package com.nju.jwx.CoAP;
+package com.nju.protocol.CoAP;
 
 import org.eclipse.californium.core.CoapResource;
 import org.eclipse.californium.core.CoapServer;

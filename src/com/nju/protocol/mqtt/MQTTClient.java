@@ -1,4 +1,4 @@
-package com.nju.jwx.mqtt;
+package com.nju.protocol.mqtt;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;

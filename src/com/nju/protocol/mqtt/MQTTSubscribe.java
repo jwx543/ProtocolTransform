@@ -1,4 +1,4 @@
-package com.nju.jwx.mqtt;
+package com.nju.protocol.mqtt;
 
 import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;

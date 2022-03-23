@@ -1,4 +1,4 @@
-package com.nju.jwx.http;
+package com.nju.protocol.http;
 
 import java.io.IOException;
 import java.io.InputStream;
