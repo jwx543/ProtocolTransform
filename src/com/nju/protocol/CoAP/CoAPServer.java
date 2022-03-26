@@ -10,7 +10,7 @@ import java.util.Date;
 
 public class CoAPServer {
     public static void main(String[] args) {
-        CoapServer server = new CoapServer();//主机为localhost 端口为默认端口5683
+        CoapServer server = new CoapServer(4444);//主机为localhost 端口为默认端口5683
         server.add(new CoapResource("hello"){//创建一个资源为hello 请求格式为 主机：端口\hello
 
             @Override

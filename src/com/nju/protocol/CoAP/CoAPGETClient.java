@@ -12,7 +12,7 @@ import java.net.URISyntaxException;
 public class CoAPGETClient {
     public static void main(String[] args) throws URISyntaxException, ConnectorException, IOException {
         URI uri = null;
-        uri = new URI("localhost:5683/hello");  //创建一个资源请求hello资源，注意默认端口为5683
+        uri = new URI("localhost:4444/hello");  //创建一个资源请求hello资源，注意默认端口为5683
         CoapClient client = new CoapClient(uri);
         CoapResponse response = client.get();
         if(response !=null){

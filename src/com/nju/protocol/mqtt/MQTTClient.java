@@ -9,8 +9,6 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 public class MQTTClient {
     public static void main(String[] args) {
         String HOST = "tcp://127.0.0.1:11883";
-//            String TOPIC = "mqtt/test";
-//            String TOPIC = "$SYS/broker/clients/connected";
         String TOPIC ="$SYS/brokers/+/clients/#";
         int qos = 1;
         String clientid = "subClient2";
@@ -38,21 +36,12 @@ public class MQTTClient {
                     System.out.println("connectionLost");
                 }
 
-//                    public void messageArrived(String topic, MqttMessage message) throws Exception {
-//                        System.out.println("topic:"+topic);
-//                        System.out.println("Qos:"+message.getQos());
-//                        System.out.println("message content:"+new String(message.getPayload()));
-//
-//                    }
-
                 public void deliveryComplete(IMqttDeliveryToken token) {
                     System.out.println("deliveryComplete---------"+ token.isComplete());
                 }
 
                 public void messageArrived(String topic, MqttMessage message) throws Exception {
                     String msg = new String(message.getPayload());
-//                        System.out.println("topic:"+topic);
-//                        System.out.println("Qos:"+message.getQos());
                     System.out.println("Message content:"+msg);
                     try {
                         JSONObject jsonObject = JSON.parseObject(msg);
