@@ -6,15 +6,17 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
+import java.util.concurrent.TimeUnit;
+
 public class MQTTPublish {
     public static void main(String[] args) {
-        String topic = "mqtt/test";
-        String content = "hello 哈哈";
-        int qos = 1;
-        String broker = "tcp://127.0.0.1:11883";
-        String userName = "admin";
-        String password = "test";
-        String clientId = "pubClient";
+        String topic = "/sensor/data";
+        String content = "{\"serialNumber\": \"SN-001\", \"sensorType\": \"Thermometer\", \"sensorModel\": \"T1000\", \"temp\": 2.2, \"hum\": 18}";
+        int qos = 0;
+        String broker = "tcp://103.47.82.178:1234";
+        String userName = "nju";
+        String password = "Nju+2022";
+        String clientId = "javaClient";
         // 内存存储
         MemoryPersistence persistence = new MemoryPersistence();
 

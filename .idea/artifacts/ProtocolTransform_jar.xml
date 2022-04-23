@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ProtocolTransform:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProtocolTransform_jar</output-path>
+    <root id="archive" name="ProtocolTransform.jar">
+      <element id="module-output" name="ProtocolTransform" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/slf4j-api-1.7.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/element-connector-3.0.0-M1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/californium-core-3.0.0-M1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/fastjson-1.2.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/commons-lang3-3.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/org.eclipse.paho.client.mqttv3-1.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/opencsv-4.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/scandium-3.0.0-M1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../java_package/slf4j-simple-1.7.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
